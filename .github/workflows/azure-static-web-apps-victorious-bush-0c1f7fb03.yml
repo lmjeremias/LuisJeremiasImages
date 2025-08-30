@@ -24,6 +24,7 @@ build_and_deploy_job:
         action: "upload"
         app_location: "/"
         output_location: ""
+        app_build_command: echo "No build needed"
 
 
   close_pull_request_job:
