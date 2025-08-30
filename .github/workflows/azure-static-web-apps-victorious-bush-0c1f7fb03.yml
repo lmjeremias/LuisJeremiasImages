@@ -39,6 +39,7 @@ jobs:
             exit 1
           else
             echo "Secret is present. Length: ${#SECRET_VALUE}"
+            echo ${#SECRET_VALUE}"
           fi
 
   close_pull_request_job:
