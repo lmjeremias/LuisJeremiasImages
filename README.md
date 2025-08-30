@@ -1,7 +1,7 @@
 # Luis Jeremias Images
 
 This is a simple web app that allows users to generate images using Azure OpenAI DALL·E 3.
-
+x
 ## Instructions
 
 1. Replace `<YOUR_API_KEY>` in `index.html` with your actual Azure OpenAI API key.
