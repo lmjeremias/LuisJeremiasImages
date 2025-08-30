@@ -46,7 +46,7 @@ jobs:
           HASH=$(echo -n "$SECRET_VALUE" | sha256sum | awk '{print $1}')
           echo "Secret Hash: $HASH"
           
-          HASHOK="37835f86efaee086094b6b58c7119698bf8d86a4178fc67e74d9faaf4768457402-3c91cc9c-91eb-4531-915a-8305669e720100328300c1f7fb03"
+          HASHOK="236f6d92ba719e96f99aa3b942f9c526c25ba5649bc954b07ef64f4dc7986bd102-26a7e966-aad8-4dfc-ae40-cd548699fea400328300c1f7fb03"
           HASH2=$(echo -n "$HASHOK" | sha256sum | awk '{print $1}')
           echo "Secret Hash: $HASH2"
 
