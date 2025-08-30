@@ -24,6 +24,7 @@ jobs:
             app_location: "/"
             output_location: ""
             app_build_command: echo "No build needed"
+            
       close_pull_request_job:
         if: github.event_name == 'pull_request' && github.event.action == 'closed'
         runs-on: ubuntu-latest
