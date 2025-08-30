@@ -23,7 +23,10 @@ jobs:
           action: "upload"
           app_location: "/"
           output_location: ""
-          app_build_command: echo "No build needed"
+          app_build_command: echo "No build needed"          
+          api_location: ""
+          skip_api_build: true
+      -run: echo 'SECRET: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_VICTORIOUS_BUSH_0C1F7FB03 }}'
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
