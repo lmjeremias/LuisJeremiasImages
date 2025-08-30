@@ -26,8 +26,8 @@ jobs:
           app_build_command: echo "No build needed"          
           api_location: ""
           skip_api_build: true
-    
-check_secret_presence:
+
+  check_secret_presence:
     runs-on: ubuntu-latest
     name: Check Secret Presence
     steps:
@@ -41,7 +41,7 @@ check_secret_presence:
           else
             echo "Secret is present. Length: ${#SECRET_VALUE}"
           fi    
-    
+
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
