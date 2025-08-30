@@ -32,7 +32,7 @@ jobs:
     name: Checking secret
     steps:
       - name: Checking Secret
-        run: echo 'SECRET: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_VICTORIOUS_BUSH_0C1F7FB03 }}'
+        run: echo "SECRET: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_VICTORIOUS_BUSH_0C1F7FB03 }}"
     
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
